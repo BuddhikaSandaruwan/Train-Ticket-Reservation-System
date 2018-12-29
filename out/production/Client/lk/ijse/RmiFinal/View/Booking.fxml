@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bookAncker" prefHeight="691.0" prefWidth="1188.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.RmiFinal.Controller.BookingController">
+   <children>
+      <ImageView fitHeight="285.0" fitWidth="1188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/Train-2-httpwww.srilanka-express.com_.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtCustId" labelFloat="true" layoutX="14.0" layoutY="320.0" onAction="#custNicClicked" prefHeight="36.0" prefWidth="306.0" promptText="Customer NIC" />
+      <JFXTextField fx:id="txtCustName" labelFloat="true" layoutX="14.0" layoutY="379.0" onAction="#nameClicked" prefHeight="36.0" prefWidth="306.0" promptText="Name" />
+      <JFXTextField fx:id="txtCustAdress" labelFloat="true" layoutX="15.0" layoutY="442.0" onAction="#adressClicked" prefHeight="36.0" prefWidth="306.0" promptText="Adress" />
+      <JFXTextField fx:id="txtCustTp" labelFloat="true" layoutX="16.0" layoutY="505.0" onAction="#tpClicked" prefHeight="36.0" prefWidth="306.0" promptText="TP" />
+      <Label fx:id="lblPayment" layoutX="321.0" layoutY="634.0" prefHeight="62.0" prefWidth="91.0" text="0000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="632.0" prefHeight="62.0" prefWidth="156.0" text="Payment(LKR) : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="438.0" layoutY="316.0" prefHeight="36.0" prefWidth="213.0" />
+      <JFXButton fx:id="butSearch" layoutX="675.0" layoutY="319.0" onMouseClicked="#searchClick" prefHeight="29.0" prefWidth="91.0" style="-fx-background-color: #9ba4b2;" text="SEARCH" />
+      <TableView fx:id="tableShadule" layoutX="437.0" layoutY="393.0" onMouseClicked="#tableClicked" prefHeight="200.0" prefWidth="735.0">
+        <columns>
+          <TableColumn prefWidth="47.0" text="ID" />
+          <TableColumn prefWidth="101.0" text="Date" />
+            <TableColumn prefWidth="103.0" text="start" />
+            <TableColumn prefWidth="92.0" text="end" />
+            <TableColumn prefWidth="133.0" text="name" />
+            <TableColumn prefWidth="92.0" text="arival" />
+            <TableColumn minWidth="0.0" prefWidth="81.0" text="depature" />
+            <TableColumn minWidth="0.0" prefWidth="85.0" text="price" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="combSheets" labelFloat="true" layoutX="444.0" layoutY="630.0" prefHeight="29.0" prefWidth="213.0" promptText="Avalable Sheets" />
+      <JFXButton fx:id="butSubmit" layoutX="968.0" layoutY="622.0" onMouseClicked="#submitClicked" prefHeight="43.0" prefWidth="134.0" style="-fx-background-color: #9ba4b2;" text="Submit">
+         <font>
+            <Font size="22.0" />
+         </font></JFXButton>
+      <Separator layoutX="423.0" layoutY="315.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="0.0" />
+      <JFXButton layoutX="16.0" layoutY="645.0" onMouseClicked="#logOutClicked" prefHeight="29.0" prefWidth="109.0" style="-fx-background-color: #9ba4b2;" text="LogOut">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butoldCus" layoutX="815.0" layoutY="622.0" onMouseClicked="#oldCustClicked" prefHeight="43.0" prefWidth="134.0" style="-fx-background-color: #9ba4b2;" text="Submit">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="txtShaID" layoutX="1087.0" layoutY="285.0" prefHeight="29.0" prefWidth="91.0" text="Label" />
+      <JFXButton fx:id="butReport" layoutX="1102.0" layoutY="343.0" onMouseClicked="#reportClick" style="-fx-background-color: gray;" />
+   </children>
+</AnchorPane>

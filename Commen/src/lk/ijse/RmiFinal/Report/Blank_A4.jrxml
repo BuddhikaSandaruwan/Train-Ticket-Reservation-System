@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="97ec09d6-d88b-4241-b806-bcdf6fd85069">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New One Train"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM Ticket ORDER BY ticID DESC LIMIT 1]]>
+	</queryString>
+	<field name="ticID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ticID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<field name="OrderDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="OrderDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<field name="payment" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="payment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<field name="sheetID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sheetID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<field name="cusID_cusID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cusID_cusID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<field name="shaID_shaID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="shaID_shaID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Ticket"/>
+	</field>
+	<group name="ticID">
+		<groupExpression><![CDATA[$F{ticID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="20" width="340" height="30" uuid="a41b4287-a151-4130-be1a-28c2ae3d3812"/>
+				<text><![CDATA[	Sri Lanka Railway Ticket BookingSystem]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="30" uuid="f6375eaf-e00f-4a11-84e3-9c66744cfe14">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a9ddf0e9-bc2f-41d3-9903-cb89b0838d3d"/>
+				</reportElement>
+				<text><![CDATA[ticID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="92" height="30" uuid="f07f4f68-bb26-4ac6-bda4-4da51dd599f4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2898998-d44c-4f83-a5e7-9e888183cc01"/>
+				</reportElement>
+				<text><![CDATA[OrderDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="92" height="30" uuid="3814a482-15a6-46f3-b1ca-7db4a20289d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad67d285-cc47-4740-a247-b83751017b4b"/>
+				</reportElement>
+				<text><![CDATA[payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="92" height="30" uuid="0353c932-2850-4c7e-b0c4-0a4005cda825">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="097115ae-8f59-44dc-97b8-b2dacec4a0e6"/>
+				</reportElement>
+				<text><![CDATA[sheetID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="92" height="30" uuid="56c1740b-9762-4c15-91fa-b81f50027aaa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42b9acaa-a323-42b1-8b3b-3702dc540061"/>
+				</reportElement>
+				<text><![CDATA[cusID_cusID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="92" height="30" uuid="6f6d288c-2e46-4dc4-bf88-82fe4bd5b161">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e145571-9012-4949-8425-20472f20f11a"/>
+				</reportElement>
+				<text><![CDATA[shaID_shaID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="95" height="30" uuid="5c93791c-d08c-4827-8ca4-dcfe230ff84e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a9ddf0e9-bc2f-41d3-9903-cb89b0838d3d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ticID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="92" height="30" uuid="9be9fd18-d484-4620-a28d-e3b22ce52abe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2898998-d44c-4f83-a5e7-9e888183cc01"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{OrderDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="92" height="30" uuid="74b07804-645b-4756-ad57-ba8e2970fa6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad67d285-cc47-4740-a247-b83751017b4b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="92" height="30" uuid="a77c0109-3284-4746-8a02-e26daa4ac48b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="097115ae-8f59-44dc-97b8-b2dacec4a0e6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{sheetID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="92" height="30" uuid="b0133298-36c5-447e-87c9-2064c7743e15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42b9acaa-a323-42b1-8b3b-3702dc540061"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{cusID_cusID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="92" height="30" uuid="020ee9e9-c679-45d3-9ed6-bc4dd40bf7e4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e145571-9012-4949-8425-20472f20f11a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{shaID_shaID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

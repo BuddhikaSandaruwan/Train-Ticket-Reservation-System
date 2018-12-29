@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="DashAncker" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.RmiFinal.Controller.DashbordController">
+   <children>
+      <ImageView fitHeight="232.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/welcome-page2_01.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="butADmin" fitHeight="126.0" fitWidth="130.0" layoutX="85.0" layoutY="241.0" onMouseClicked="#adminClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/Soldier-2-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="butReseption" fitHeight="180.0" fitWidth="189.0" layoutX="339.0" layoutY="216.0" onMouseClicked="#ReseptionClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/reception-detail-flat-color-icon-vector-7572087.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

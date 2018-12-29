@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="563.0" prefWidth="674.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.RmiFinal.Controller.AdminController">
+   <children>
+      <ImageView fitHeight="151.0" fitWidth="141.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/Sri_Lanka_Railway_logo%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="151.0" layoutX="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resoses/01-500x500.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="32.0" prefHeight="102.0" prefWidth="391.0" text="Sri Lanka Railway Department">
+         <font>
+            <Font name="AnjaliOldLipi" size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField labelFloat="true" layoutX="40.0" layoutY="176.0" prefHeight="26.0" prefWidth="205.0" promptText="Shadule ID" />
+      <JFXTextField labelFloat="true" layoutX="41.0" layoutY="314.0" prefHeight="26.0" prefWidth="205.0" promptText="End Station" />
+      <JFXTextField labelFloat="true" layoutX="41.0" layoutY="269.0" prefHeight="26.0" prefWidth="205.0" promptText="Start Station" />
+      <DatePicker layoutX="41.0" layoutY="230.0" prefHeight="26.0" prefWidth="205.0" promptText="Date" />
+      <JFXTextField labelFloat="true" layoutX="41.0" layoutY="359.0" prefHeight="26.0" prefWidth="205.0" promptText="Train Name" />
+      <JFXTextField labelFloat="true" layoutX="41.0" layoutY="404.0" prefHeight="26.0" prefWidth="205.0" promptText="Arival Time" />
+      <JFXTextField labelFloat="true" layoutX="41.0" layoutY="449.0" prefHeight="26.0" prefWidth="205.0" promptText="Departure Time" />
+      <JFXButton layoutX="84.0" layoutY="510.0" prefHeight="26.0" prefWidth="100.0" text="Submit" />
+      <JFXTextField labelFloat="true" layoutX="334.0" layoutY="228.0" prefHeight="26.0" prefWidth="205.0" promptText="Sheet ID" />
+      <JFXComboBox layoutX="332.0" layoutY="176.0" prefHeight="26.0" prefWidth="205.0" promptText="Shadule ID" />
+      <JFXButton layoutX="434.0" layoutY="289.0" prefHeight="26.0" prefWidth="100.0" text="add" />
+      <TableView layoutX="299.0" layoutY="340.0" prefHeight="215.0" prefWidth="367.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Separator layoutX="298.0" layoutY="164.0" orientation="VERTICAL" prefHeight="151.0" prefWidth="3.0" />
+   </children>
+</AnchorPane>

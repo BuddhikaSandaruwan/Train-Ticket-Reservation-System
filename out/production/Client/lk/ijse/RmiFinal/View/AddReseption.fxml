@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancker" prefHeight="465.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.RmiFinal.Controller.AddReseptionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="1.0" prefHeight="79.0" prefWidth="292.0" text="ADD RESEPTION">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUSERNAME" layoutX="53.0" layoutY="134.0" prefHeight="49.0" prefWidth="312.0" promptText="USER NAME" />
+      <JFXPasswordField layoutX="53.0" layoutY="207.0" prefHeight="49.0" prefWidth="312.0" promptText="PASSWORD" />
+      <JFXButton fx:id="butADD" layoutX="227.0" layoutY="373.0" onMouseClicked="#addClicked" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: gray;" text="ADD">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" layoutX="54.0" layoutY="283.0" prefHeight="49.0" prefWidth="312.0" promptText="CONFORM PASSWORD" />
+      <JFXTextField fx:id="txtNIC" layoutX="52.0" layoutY="64.0" prefHeight="49.0" prefWidth="312.0" promptText="NIC" />
+      <JFXButton fx:id="butBack" layoutX="45.0" layoutY="373.0" onMouseClicked="#backclicked" prefHeight="49.0" prefWidth="139.0" style="-fx-background-color: gray;" text="BACK">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
